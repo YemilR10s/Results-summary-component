@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=League+Spartan:wght@400;500;700&family=Montserrat:ital,wght@0,500;1,600&family=Poppins:wght@500;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/********************colores***********************/
+
+:root{
+     /********Primary******/
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+     
+    /********Gradients******/
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+    
+    /********Neutral******/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+}
+/********************nav***********************/
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+article{
+    width: 700px;
+    /* height: 500px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(39, 8, 8, 0.24) 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+/********************firts container***********************/
+
+.firts__container{
+    text-align: center;
+    background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
+    border-radius: 20px;
+}
+.firts__container h4{
+    margin-top: 30px;
+    color: var(--Light-lavender);
+    font-size: 1.5rem;
+}
+
+.firts__container .circule{
+    margin: 80px 90px 10px 90px;
+    padding: 40px 0px;
+    border-radius: 50%;
+    background: linear-gradient(var(--Violet-blue-circle),var(--Persian-blue-circle));
+}
+
+.circule h1{
+    font-size: 4rem;
+    color: var(--White);
+}
+
+.circule h6{
+    font-size: 0.7rem;
+    color: var(--Light-lavender);
+}
+
+.firts__container h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--White);
+}
+
+.firts__container p{
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: var(--Light-lavender);
+    margin-bottom: 50px;
+}
+/********************second container***********************/
+
+.second__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 30px;
+
+}
+
+.second__container .box{
+    display: flex;
+    justify-content: space-between;
+}
+.second__container .caja{
+    display: flex;
+    gap: 10px;
+}
+.second__container h3{
+    font-size: 1.5rem;
+    color: var(--Dark-gray-blue);
+}
+    /**************sumary********/
+
+.reaction{
+ color: var(--Light-red);
+ background-color: hsl(0, 100%, 98%);
+ padding: 15px;
+ border-radius: 10px;
+}
+.memory{
+    color: var(--Orangey-yellow);
+    background-color: hsl(40, 100%, 97%);
+    padding: 15px;
+    border-radius: 10px;
+   }
+.verbal{
+    color: var(--Green-teal);
+    background-color: hsl(95, 87%, 94%);
+    padding: 15px;
+    border-radius: 10px;
+   }
+.visual{
+    color: var(--Cobalt-blue);
+    background-color: hsl(227, 100%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+   }
+
+button{
+    padding: 20px;
+    background: linear-gradient(var(--Light-slate-blue-background),var(--Light-royal-blue-background));
+    border-radius: 20px;
+    border: none;
+    color: var(--White);
+}
+.number{
+    color: gray;
+}
+.number span{
+    color: black;
+}
+/********************foooterrrr***********************/
+.attribution { 
+    font-size: 11px;
+    text-align: center; }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width:600px) {
+    article{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .second__container{
+        margin: 30px 30px;
+    
+    }
+    .second__container .box{
+        margin: 20px 0px;
+    }
+    .firts__container{
+       margin-top: 390px;
+    }
+ }
