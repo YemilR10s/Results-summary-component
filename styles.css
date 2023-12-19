@@ -176,6 +176,11 @@ button{
         margin: 20px 0px;
     }
     .firts__container{
-       margin-top: 390px;
+       margin-top: 420px;
+    }
+    .firts__container .circule{
+        margin: 100px 100px 10px 100px;
+        padding: 60px;
+        border-radius: 50%;
     }
  }
